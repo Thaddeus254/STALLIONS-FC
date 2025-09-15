@@ -1,18 +1,19 @@
-import React, { useState } from 'react';
-import { Link, useLocation } from 'react-router-dom';
-import { Menu, X } from 'lucide-react';
-import './Header.css';
+import React, { useState } from "react";
+import { Link, useLocation } from "react-router-dom";
+import { Menu, X } from "lucide-react";
+import "./Header.css";
 
 const Header: React.FC = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const location = useLocation();
 
   const navItems = [
-    { path: '/', label: 'Home' },
-    { path: '/team', label: 'Team' },
-    { path: '/academy', label: 'Academy' },
-    { path: '/staff', label: 'Staff' },
-    { path: '/partners', label: 'Partners' },
+    { path: "/", label: "Home" },
+    { path: "/team", label: "Team" },
+    { path: "/academy", label: "Academy" },
+    { path: "/staff", label: "Staff" },
+    { path: "/gallery", label: "Gallery" },
+    { path: "/partners", label: "Partners" },
   ];
 
   const toggleMenu = () => {
@@ -25,7 +26,11 @@ const Header: React.FC = () => {
         <div className="header-content">
           <Link to="/" className="logo">
             <div className="logo-icon">
-              <span className="logo-text">S</span>
+              <img
+                src="/logos/stallion Fc logo.png"
+                alt="Stallions FC Logo"
+                className="club-logo"
+              />
             </div>
             <div className="logo-details">
               <h1 className="club-name">STALLIONS FC</h1>
@@ -33,13 +38,15 @@ const Header: React.FC = () => {
             </div>
           </Link>
 
-          <nav className={`nav ${isMenuOpen ? 'nav-open' : ''}`}>
+          <nav className={`nav ${isMenuOpen ? "nav-open" : ""}`}>
             <ul className="nav-list">
               {navItems.map((item) => (
                 <li key={item.path}>
                   <Link
                     to={item.path}
-                    className={`nav-link ${location.pathname === item.path ? 'active' : ''}`}
+                    className={`nav-link ${
+                      location.pathname === item.path ? "active" : ""
+                    }`}
                     onClick={() => setIsMenuOpen(false)}
                   >
                     {item.label}

@@ -1,23 +1,3 @@
-export interface Player {
-  id: number;
-  name: string;
-  position: string;
-  age: number;
-  nationality: string;
-  jerseyNumber: number;
-  image: string;
-  bio: string;
-  stats: {
-    appearances: number;
-    goals: number;
-    assists: number;
-    yellowCards: number;
-    redCards: number;
-  };
-  previousClubs: string[];
-  joinedDate: string;
-}
-
 export const players: Player[] = [
   {
     id: 1,
@@ -26,111 +6,263 @@ export const players: Player[] = [
     age: 25,
     nationality: "Kenyan",
     jerseyNumber: 1,
-    image: "https://images.pexels.com/photos/1884574/pexels-photo-1884574.jpeg?auto=compress&cs=tinysrgb&w=400&h=600&fit=crop",
-    bio: "Collins is our reliable goalkeeper with exceptional reflexes and leadership qualities. Known for his commanding presence in the box and ability to organize the defense.",
-    stats: {
-      appearances: 20,
-      goals: 0,
-      assists: 0,
-      yellowCards: 3,
-      redCards: 0,
-    },
-    previousClubs: ["Kisumu Day"],
-    joinedDate: "2023-01-15"
+    image:
+      "https://images.pexels.com/photos/1884574/pexels-photo-1884574.jpeg?auto=compress&cs=tinysrgb&w=400&h=600&fit=crop",
+    bio: "Collins is our reliable goalkeeper, known for his lightning reflexes, commanding presence, and leadership in organizing the defense.",
+    stats: { appearances: 20, goals: 0, assists: 0, yellowCards: 3, redCards: 0 },
+    previousClubs: [" "],
+    joinedDate: "2023-01-15",
   },
   {
     id: 2,
-    name: "Sheldon Otieno",
-    position: "Goalkeeper",
-    age: 25,
+    name: "Maxwel Omondi",
+    position: "Forward",
+    age: 28,
     nationality: "Kenyan",
-    jerseyNumber: 10,
-    image: "https://images.pexels.com/photos/1884576/pexels-photo-1884576.jpeg?auto=compress&cs=tinysrgb&w=400&h=600&fit=crop",
-    bio: "James is our creative midfielder with excellent vision and passing ability. He's the engine of our team and our captain.",
-    stats: {
-      appearances: 42,
-      goals: 12,
-      assists: 18,
-      yellowCards: 5,
-      redCards: 0
-    },
-    previousClubs: ["Gor Mahia Youth", "Mathare United"],
-    joinedDate: "2022-07-01"
+    jerseyNumber: 11,
+    image:
+      "https://images.pexels.com/photos/1884576/pexels-photo-1884576.jpeg?auto=compress&cs=tinysrgb&w=400&h=600&fit=crop",
+    bio: "Maxwel is our explosive forward, capable of breaking defenses with his speed and finishing. A key player in goal-scoring opportunities.",
+    stats: { appearances: 30, goals: 12, assists: 9, yellowCards: 5, redCards: 1 },
+    previousClubs: [""],
+    joinedDate: "2023-01-15",
   },
   {
     id: 3,
-    name: "Michael Wanjiku",
+    name: "Anderius Otieno",
     position: "Forward",
-    age: 23,
+    age: 28,
     nationality: "Kenyan",
     jerseyNumber: 9,
-    image: "https://images.pexels.com/photos/1884581/pexels-photo-1884581.jpeg?auto=compress&cs=tinysrgb&w=400&h=600&fit=crop",
-    bio: "Michael is our prolific striker with a keen eye for goal. His pace and finishing ability make him a constant threat to opposing defenses.",
-    stats: {
-      appearances: 38,
-      goals: 25,
-      assists: 8,
-      yellowCards: 2,
-      redCards: 1
-    },
-    previousClubs: ["AFC Leopards Youth", "Kakamega Homeboyz"],
-    joinedDate: "2023-03-10"
+    image:
+      "https://images.pexels.com/photos/1884581/pexels-photo-1884581.jpeg?auto=compress&cs=tinysrgb&w=400&h=600&fit=crop",
+    bio: "Anderius is our clinical striker with excellent positioning and pace, consistently posing a threat to any defensive line.",
+    stats: { appearances: 30, goals: 12, assists: 8, yellowCards: 4, redCards: 0 },
+    previousClubs: [""],
+    joinedDate: "2023-01-15",
   },
   {
     id: 4,
-    name: "Peter Kimani",
+    name: "Brian Owino",
     position: "Defender",
-    age: 30,
+    age: 22,
     nationality: "Kenyan",
     jerseyNumber: 4,
-    image: "https://images.pexels.com/photos/1884582/pexels-photo-1884582.jpeg?auto=compress&cs=tinysrgb&w=400&h=600&fit=crop",
-    bio: "Peter is our solid center-back with years of experience. His aerial ability and defensive positioning make him invaluable to our backline.",
-    stats: {
-      appearances: 40,
-      goals: 3,
-      assists: 1,
-      yellowCards: 8,
-      redCards: 0
-    },
-    previousClubs: ["Tusker FC", "Bandari FC"],
-    joinedDate: "2021-12-01"
+    image:
+      "https://images.pexels.com/photos/1884582/pexels-photo-1884582.jpeg?auto=compress&cs=tinysrgb&w=400&h=600&fit=crop",
+    bio: "Brian is a dependable center-back with excellent aerial ability and defensive awareness, keeping attackers at bay.",
+    stats: { appearances: 20, goals: 0, assists: 1, yellowCards: 5, redCards: 0 },
+    previousClubs: [""],
+    joinedDate: "2023-01-15",
   },
   {
     id: 5,
-    name: "Samuel Mutua",
+    name: "Josephat Ogendi",
     position: "Midfielder",
     age: 26,
     nationality: "Kenyan",
     jerseyNumber: 8,
-    image: "https://images.pexels.com/photos/1884583/pexels-photo-1884583.jpeg?auto=compress&cs=tinysrgb&w=400&h=600&fit=crop",
-    bio: "Samuel is our box-to-box midfielder known for his work rate and versatility. He can play multiple positions and brings energy to every match.",
-    stats: {
-      appearances: 35,
-      goals: 7,
-      assists: 12,
-      yellowCards: 4,
-      redCards: 0
-    },
-    previousClubs: ["Sofapaka FC", "Ulinzi Stars"],
-    joinedDate: "2023-06-15"
+    image:
+      "https://images.pexels.com/photos/1884583/pexels-photo-1884583.jpeg?auto=compress&cs=tinysrgb&w=400&h=600&fit=crop",
+    bio: "Josephat is a versatile midfielder with excellent stamina and vision, orchestrating play and connecting defense to attack.",
+    stats: { appearances: 25, goals: 3, assists: 4, yellowCards: 4, redCards: 0 },
+    previousClubs: [""],
+    joinedDate: "2023-01-15",
   },
   {
     id: 6,
-    name: "Brian Ouma",
+    name: "Imran Hassan",
     position: "Defender",
-    age: 24,
+    age: 20,
     nationality: "Kenyan",
     jerseyNumber: 3,
-    image: "https://images.pexels.com/photos/1884584/pexels-photo-1884584.jpeg?auto=compress&cs=tinysrgb&w=400&h=600&fit=crop",
-    bio: "Brian is our attacking left-back with excellent crossing ability. His pace down the flank creates numerous attacking opportunities.",
-    stats: {
-      appearances: 33,
-      goals: 2,
-      assists: 9,
-      yellowCards: 3,
-      redCards: 0
-    },
-    previousClubs: ["Kariobangi Sharks", "Zoo FC"],
-    joinedDate: "2023-08-20"
-  }
+    image:
+      "https://images.pexels.com/photos/1884584/pexels-photo-1884584.jpeg?auto=compress&cs=tinysrgb&w=400&h=600&fit=crop",
+    bio: "Imran is a dynamic left-back who combines speed and precision crossing, supporting both defense and attack.",
+    stats: { appearances: 10, goals: 0, assists: 0, yellowCards: 1, redCards: 0 },
+    previousClubs: [""],
+    joinedDate: "2023-01-15",
+  },
+  {
+    id: 7,
+    name: "Alexis Obonyo",
+    position: "Winger",
+    age: 23,
+    nationality: "Kenyan",
+    jerseyNumber: 17,
+    image:
+      "https://images.pexels.com/photos/1884584/pexels-photo-1884584.jpeg?auto=compress&cs=tinysrgb&w=400&h=600&fit=crop",
+    bio: "Alexis is a fast and skillful winger, providing width and delivering precise crosses to create scoring chances.",
+    stats: { appearances: 10, goals: 0, assists: 0, yellowCards: 1, redCards: 0 },
+    previousClubs: [""],
+    joinedDate: "2023-01-15",
+  },
+  {
+    id: 8,
+    name: "Brighton Odhiambo",
+    position: "Midfielder",
+    age: 24,
+    nationality: "Kenyan",
+    jerseyNumber: 18,
+    image:
+      "https://images.pexels.com/photos/1884584/pexels-photo-1884584.jpeg?auto=compress&cs=tinysrgb&w=400&h=600&fit=crop",
+    bio: "Brighton is a creative midfielder, controlling tempo and providing key passes to unlock defenses.",
+    stats: { appearances: 23, goals: 0, assists: 0, yellowCards: 1, redCards: 0 },
+    previousClubs: [""],
+    joinedDate: "2023-01-15",
+  },
+  {
+    id: 9,
+    name: "Charles Owino",
+    position: "Defender",
+    age: 29,
+    nationality: "Kenyan",
+    jerseyNumber: 14,
+    image:
+      "https://images.pexels.com/photos/1884584/pexels-photo-1884584.jpeg?auto=compress&cs=tinysrgb&w=400&h=600&fit=crop",
+    bio: "Charles is a strong center-back with exceptional tackling and marking skills, anchoring the defense reliably.",
+    stats: { appearances: 30, goals: 3, assists: 0, yellowCards: 1, redCards: 0 },
+    previousClubs: [""],
+    joinedDate: "2023-01-15",
+  },
+ {
+  id: 10,
+  name: "Collins Dullo",
+  position: "Defender",
+  age: 26,
+  nationality: "Kenyan",
+  jerseyNumber: 20,
+  image:
+    "https://images.pexels.com/photos/1884584/pexels-photo-1884584.jpeg?auto=compress&cs=tinysrgb&w=400&h=600&fit=crop",
+  bio: "Collins is a versatile right-back, strong in defense and capable of joining attacks with accurate crosses.",
+  stats: { appearances: 15, goals: 0, assists: 0, yellowCards: 1, redCards: 0 },
+  previousClubs: [""],
+  joinedDate: "2023-01-15",
+},
+{
+  id: 11,
+  name: "Gilbert Sianga",
+  position: "Forward",
+  age: 22,
+  nationality: "Kenyan",
+  jerseyNumber: 19,
+  image:
+    "https://images.pexels.com/photos/1884584/pexels-photo-1884584.jpeg?auto=compress&cs=tinysrgb&w=400&h=600&fit=crop",
+  bio: "Gilbert is a quick and agile forward, known for his dribbling skills and ability to finish in tight spaces.",
+  stats: { appearances: 20, goals: 0, assists: 0, yellowCards: 1, redCards: 0 },
+  previousClubs: [""],
+  joinedDate: "2023-01-15",
+},
+{
+  id: 12,
+  name: "Jared Odiwuor",
+  position: "Midfielder",
+  age: 28,
+  nationality: "Kenyan",
+  jerseyNumber: 21,
+  image:
+    "https://images.pexels.com/photos/1884584/pexels-photo-1884584.jpeg?auto=compress&cs=tinysrgb&w=400&h=600&fit=crop",
+  bio: "Jared is a commanding central midfielder with great vision and passing range, linking defense and attack seamlessly.",
+  stats: { appearances: 30, goals: 0, assists: 0, yellowCards: 1, redCards: 0 },
+  previousClubs: [""],
+  joinedDate: "2023-01-15",
+},
+{
+  id: 13,
+  name: "Javan Ochieng",
+  position: "Defender",
+  age: 22,
+  nationality: "Kenyan",
+  jerseyNumber: 15,
+  image:
+    "https://images.pexels.com/photos/1884584/pexels-photo-1884584.jpeg?auto=compress&cs=tinysrgb&w=400&h=600&fit=crop",
+  bio: "Javan is a solid center-back with strong tackling and aerial ability, consistently reading the game well.",
+  stats: { appearances: 20, goals: 0, assists: 0, yellowCards: 1, redCards: 0 },
+  previousClubs: [""],
+  joinedDate: "2023-01-15",
+},
+{
+  id: 14,
+  name: "Justus Oluoch",
+  position: "Midfielder",
+  age: 25,
+  nationality: "Kenyan",
+  jerseyNumber: 22,
+  image:
+    "https://images.pexels.com/photos/1884584/pexels-photo-1884584.jpeg?auto=compress&cs=tinysrgb&w=400&h=600&fit=crop",
+  bio: "Justus is a hardworking midfielder, excellent at ball recovery and distributing accurate passes under pressure.",
+  stats: { appearances: 10, goals: 0, assists: 0, yellowCards: 1, redCards: 0 },
+  previousClubs: [""],
+  joinedDate: "2023-01-15",
+},
+{
+  id: 15,
+  name: "Maverick Okoth",
+  position: "Forward",
+  age: 27,
+  nationality: "Kenyan",
+  jerseyNumber: 13,
+  image: "/Public/gallery/13.jpg",
+  bio: "Maverick is a versatile forward with strong finishing skills and an eye for creating scoring opportunities for teammates.",
+  stats: { appearances: 10, goals: 0, assists: 0, yellowCards: 1, redCards: 0 },
+  previousClubs: [""],
+  joinedDate: "2023-01-15",
+},
+{
+  id: 16,
+  name: "Kelvin Mwendwa",
+  position: "Defender",
+  age: 28,
+  nationality: "Kenyan",
+  jerseyNumber: 2,
+  image:
+    "https://images.pexels.com/photos/1884584/pexels-photo-1884584.jpeg?auto=compress&cs=tinysrgb&w=400&h=600&fit=crop",
+  bio: "Kelvin is a reliable defender, strong in tackles and interceptions, and adept at organizing the backline.",
+  stats: { appearances: 10, goals: 0, assists: 0, yellowCards: 1, redCards: 0 },
+  previousClubs: [""],
+  joinedDate: "2023-01-15",
+},
+{
+  id: 17,
+  name: "Sheldon Otieno",
+  position: "Goalkeeper",
+  age: 24,
+  nationality: "Kenyan",
+  jerseyNumber: 12,
+  image:
+    "https://images.pexels.com/photos/1884584/pexels-photo-1884584.jpeg?auto=compress&cs=tinysrgb&w=400&h=600&fit=crop",
+  bio: "Sheldon is an agile goalkeeper with excellent shot-stopping ability and command over the penalty area.",
+  stats: { appearances: 10, goals: 0, assists: 0, yellowCards: 1, redCards: 0 },
+  previousClubs: [""],
+  joinedDate: "2023-01-15",
+},
+{
+  id: 18,
+  name: "Walter Oluoch",
+  position: "Defender",
+  age: 29,
+  nationality: "Kenyan",
+  jerseyNumber: 6,
+  image:
+    "https://images.pexels.com/photos/1884584/pexels-photo-1884584.jpeg?auto=compress&cs=tinysrgb&w=400&h=600&fit=crop",
+  bio: "Walter is a strong full-back, reliable defensively and capable of supporting attacking plays down the flank.",
+  stats: { appearances: 10, goals: 0, assists: 0, yellowCards: 1, redCards: 0 },
+  previousClubs: [""],
+  joinedDate: "2023-01-15",
+},
+{
+  id: 19,
+  name: "Tony Odhiambo",
+  position: "Midfielder",
+  age: 25,
+  nationality: "Kenyan",
+  jerseyNumber: 30,
+  image:
+    "https://images.pexels.com/photos/1884584/pexels-photo-1884584.jpeg?auto=compress&cs=tinysrgb&w=400&h=600&fit=crop",
+  bio: "Tony is a creative midfielder with excellent ball control and the ability to create opportunities from the midfield.",
+  stats: { appearances: 10, goals: 0, assists: 0, yellowCards: 1, redCards: 0 },
+  previousClubs: [""],
+  joinedDate: "2023-01-15",
+},
+
 ];

@@ -7,6 +7,7 @@ import Team from './pages/Team';
 import PlayerBio from './pages/PlayerBio';
 import Academy from './pages/Academy';
 import Staff from './pages/Staff';
+import Gallery from './pages/Gallery';
 import Partners from './pages/Partners';
 import './App.css';
 
@@ -21,6 +22,7 @@ function App() {
           <Route path="/player/:id" element={<PlayerBio />} />
           <Route path="/academy" element={<Academy />} />
           <Route path="/staff" element={<Staff />} />
+          <Route path="/gallery" element={<Gallery />} />
           <Route path="/partners" element={<Partners />} />
         </Routes>
       </main>

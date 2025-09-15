@@ -9,6 +9,7 @@ const Team: React.FC = () => {
     Goalkeepers: players.filter(p => p.position === 'Goalkeeper'),
     Defenders: players.filter(p => p.position === 'Defender'),
     Midfielders: players.filter(p => p.position === 'Midfielder'),
+    Wingers: players.filter(p => p.position === 'Winger'),
     Forwards: players.filter(p => p.position === 'Forward')
   };
 

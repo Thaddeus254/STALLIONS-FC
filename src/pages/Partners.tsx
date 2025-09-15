@@ -9,9 +9,9 @@ const Partners: React.FC = () => {
       id: 1,
       name: "Greenworld Advocates",
       type: "Legal Partner",
-      logo: "https://images.pexels.com/photos/5668858/pexels-photo-5668858.jpeg?auto=compress&cs=tinysrgb&w=300&h=200&fit=crop",
+      logo: "/logos/GREENWORLD logo.png",
       description: "Our trusted legal advisors providing comprehensive legal services and contract negotiations.",
-      partnership: "Since 2022",
+      partnership: "Since 2023",
       services: ["Contract Negotiations", "Legal Advisory", "Player Transfers", "Compliance"]
     }
   ];
