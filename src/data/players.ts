@@ -34,7 +34,6 @@ export const players: Player[] = [
       assists: 0,
       yellowCards: 3,
       redCards: 0,
-      Saves: 15
     },
     previousClubs: ["Kisumu Day"],
     joinedDate: "2023-01-15"
