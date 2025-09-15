@@ -1,0 +1,175 @@
+.team-hero {
+  background: linear-gradient(135deg, var(--primary-black) 0%, rgba(255, 215, 0, 0.1) 100%);
+  color: var(--white);
+  padding: 4rem 0;
+  text-align: center;
+}
+
+.team-hero-content h1 {
+  font-size: 3.5rem;
+  font-weight: 900;
+  margin-bottom: 1rem;
+  color: var(--primary-yellow);
+}
+
+.team-hero-content p {
+  font-size: 1.2rem;
+  color: rgba(255, 255, 255, 0.8);
+  margin: 0;
+}
+
+.position-group {
+  margin-bottom: 4rem;
+}
+
+.position-title {
+  color: var(--primary-black);
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 2rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 3px solid var(--primary-yellow);
+  display: inline-block;
+}
+
+.players-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+}
+
+.player-card {
+  background: var(--white);
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: var(--shadow);
+  transition: all 0.3s ease;
+  text-decoration: none;
+  color: inherit;
+  display: block;
+}
+
+.player-card:hover {
+  transform: translateY(-8px);
+  box-shadow: var(--shadow-lg);
+}
+
+.player-image-container {
+  position: relative;
+  height: 300px;
+  overflow: hidden;
+}
+
+.player-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.player-card:hover .player-image {
+  transform: scale(1.05);
+}
+
+.jersey-number {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  background: var(--primary-yellow);
+  color: var(--primary-black);
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 900;
+  font-size: 1.2rem;
+  box-shadow: var(--shadow);
+}
+
+.player-overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: linear-gradient(transparent, rgba(0, 0, 0, 0.8));
+  color: var(--white);
+  padding: 2rem 1rem 1rem;
+  transform: translateY(100%);
+  transition: transform 0.3s ease;
+}
+
+.player-card:hover .player-overlay {
+  transform: translateY(0);
+}
+
+.view-profile {
+  font-weight: 600;
+  font-size: 1rem;
+}
+
+.player-info {
+  padding: 1.5rem;
+}
+
+.player-name {
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: var(--primary-black);
+  margin-bottom: 0.5rem;
+}
+
+.player-position {
+  color: var(--primary-yellow);
+  font-weight: 600;
+  margin-bottom: 0.25rem;
+  font-size: 1rem;
+}
+
+.player-age {
+  color: var(--medium-gray);
+  font-size: 0.9rem;
+  margin: 0;
+}
+
+@media (max-width: 768px) {
+  .team-hero-content h1 {
+    font-size: 2.5rem;
+  }
+  
+  .team-hero-content p {
+    font-size: 1rem;
+  }
+  
+  .players-grid {
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.5rem;
+  }
+  
+  .position-title {
+    font-size: 1.5rem;
+  }
+  
+  .player-image-container {
+    height: 250px;
+  }
+}
+
+@media (max-width: 480px) {
+  .team-hero {
+    padding: 2rem 0;
+  }
+  
+  .team-hero-content h1 {
+    font-size: 2rem;
+  }
+  
+  .players-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .player-info {
+    padding: 1rem;
+  }
+}

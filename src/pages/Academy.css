@@ -1,0 +1,237 @@
+.academy-hero {
+  background: linear-gradient(135deg, var(--primary-yellow) 0%, var(--dark-yellow) 100%);
+  color: var(--primary-black);
+  padding: 4rem 0;
+  text-align: center;
+}
+
+.academy-hero-content h1 {
+  font-size: 3.5rem;
+  font-weight: 900;
+  margin-bottom: 1rem;
+}
+
+.academy-hero-content p {
+  font-size: 1.2rem;
+  font-weight: 500;
+  margin: 0;
+}
+
+.academy-overview {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 3rem;
+  align-items: center;
+}
+
+.overview-text h2 {
+  color: var(--primary-black);
+  margin-bottom: 1.5rem;
+  font-size: 2.5rem;
+}
+
+.overview-text p {
+  color: var(--medium-gray);
+  margin-bottom: 2rem;
+  line-height: 1.6;
+}
+
+.academy-features {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.feature-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+  padding: 1rem;
+  background: var(--white);
+  border-radius: 12px;
+  box-shadow: var(--shadow);
+  transition: all 0.3s ease;
+}
+
+.feature-item:hover {
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-lg);
+}
+
+.feature-icon {
+  color: var(--primary-yellow);
+  background: rgba(255, 215, 0, 0.1);
+  padding: 0.75rem;
+  border-radius: 12px;
+  width: 48px;
+  height: 48px;
+}
+
+.feature-item h4 {
+  color: var(--primary-black);
+  margin-bottom: 0.25rem;
+  font-size: 1.1rem;
+}
+
+.feature-item p {
+  color: var(--medium-gray);
+  margin: 0;
+  font-size: 0.9rem;
+}
+
+.overview-image img {
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+  border-radius: 16px;
+  box-shadow: var(--shadow-lg);
+}
+
+.section-title {
+  text-align: center;
+  margin-bottom: 3rem;
+  color: var(--primary-black);
+  font-size: 2.5rem;
+}
+
+.academy-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: 2rem;
+}
+
+.academy-card {
+  background: var(--white);
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: var(--shadow);
+  transition: all 0.3s ease;
+}
+
+.academy-card:hover {
+  transform: translateY(-6px);
+  box-shadow: var(--shadow-lg);
+}
+
+.academy-image-container {
+  position: relative;
+  height: 250px;
+  overflow: hidden;
+}
+
+.academy-image-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.academy-card:hover .academy-image-container img {
+  transform: scale(1.05);
+}
+
+.academy-overlay {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  background: var(--primary-yellow);
+  color: var(--primary-black);
+  padding: 0.5rem 1rem;
+  border-radius: 20px;
+  font-weight: 600;
+  font-size: 0.9rem;
+}
+
+.academy-info {
+  padding: 1.5rem;
+}
+
+.academy-info h3 {
+  color: var(--primary-black);
+  margin-bottom: 0.5rem;
+  font-size: 1.3rem;
+}
+
+.academy-position {
+  color: var(--primary-yellow);
+  font-weight: 600;
+  margin-bottom: 0.25rem;
+}
+
+.academy-age {
+  color: var(--medium-gray);
+  font-size: 0.9rem;
+  margin-bottom: 1rem;
+}
+
+.academy-bio {
+  color: var(--medium-gray);
+  line-height: 1.5;
+  margin-bottom: 1.5rem;
+}
+
+.achievements h4 {
+  color: var(--primary-black);
+  margin-bottom: 0.75rem;
+  font-size: 1rem;
+}
+
+.achievements ul {
+  list-style: none;
+  padding: 0;
+}
+
+.achievements li {
+  background: var(--light-gray);
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+  margin-bottom: 0.5rem;
+  color: var(--medium-gray);
+  font-size: 0.9rem;
+  border-left: 3px solid var(--primary-yellow);
+}
+
+@media (max-width: 768px) {
+  .academy-hero-content h1 {
+    font-size: 2.5rem;
+  }
+  
+  .academy-overview {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+  
+  .overview-text h2 {
+    font-size: 2rem;
+  }
+  
+  .academy-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .section-title {
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .academy-hero {
+    padding: 2rem 0;
+  }
+  
+  .academy-hero-content h1 {
+    font-size: 2rem;
+  }
+  
+  .academy-hero-content p {
+    font-size: 1rem;
+  }
+  
+  .academy-card {
+    margin: 0 1rem;
+  }
+  
+  .academy-info {
+    padding: 1rem;
+  }
+}
