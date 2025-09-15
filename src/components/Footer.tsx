@@ -74,7 +74,7 @@ const Footer: React.FC = () => {
               </div>
               <div className="contact-item">
                 <Mail size={16} />
-                <span>stallionsfc@gmail.com</span>
+                <span>stallions126@gmail.com</span>
               </div>
             </div>
           </div>
@@ -89,10 +89,10 @@ const Footer: React.FC = () => {
               <a href="#" className="social-link">
                 <SiTiktok size={20} />
               </a>
-             <a href="#" className="social-link">
+              <a href="#" className="social-link">
                 <Instagram size={20} />
               </a>
-              </div>
+            </div>
           </div>
         </div>
 

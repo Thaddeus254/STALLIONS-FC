@@ -1,3 +1,24 @@
+// Define the Player type if not imported from elsewhere
+export type Player = {
+  id: number;
+  name: string;
+  position: string;
+  age: number;
+  nationality: string;
+  jerseyNumber: number;
+  image: string;
+  bio: string;
+  stats: {
+    appearances: number;
+    goals: number;
+    assists: number;
+    yellowCards: number;
+    redCards: number;
+  };
+  previousClubs: string[];
+  joinedDate: string;
+};
+
 export const players: Player[] = [
   {
     id: 1,
