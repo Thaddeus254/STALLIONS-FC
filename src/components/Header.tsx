@@ -27,7 +27,7 @@ const Header: React.FC = () => {
           <Link to="/" className="logo">
             <div className="logo-icon">
               <img
-                src="/logos/stallion Fc logo.png"
+                src="/logos/stallions-fc-logo.png"
                 alt="Stallions FC Logo"
                 className="club-logo"
               />
